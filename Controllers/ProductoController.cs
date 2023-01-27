@@ -10,15 +10,19 @@ namespace Proyecto_Arnold.Controllers
 {
     public class ProductoController : ApiController
     {
+
         static Dictionary<int, Producto> productos = new Dictionary<int, Producto>();
 
         //GET api/Producto
-        public IEnumerable <Producto> Get()
+        public IEnumerable<Producto> Get()
         {
             return new List<Producto>(productos.Values);
         }
+
+
+
         //GET api/Producto/5
-        public Producto Get(int id)
+        public Producto GetBuscar(int id)
         {
             Producto buscado;
             productos.TryGetValue(id, out buscado);
@@ -26,7 +30,9 @@ namespace Proyecto_Arnold.Controllers
 
         }
 
-        public bool Post([FromBody]Producto producto)
+
+
+        public bool Post([FromBody] Producto producto)
         {
             Producto buscado;
             productos.TryGetValue(producto.IdProducto, out buscado);

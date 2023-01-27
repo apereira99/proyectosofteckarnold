@@ -10,5 +10,8 @@ namespace Proyecto_Arnold.Models
         public int IdAsesor { get; set; }
         public string NombreAsesor { get; set; }
         public string NombreProducto  { get; set; }
+        public int edad { get; set; }
+        public string telefono { get; set; }
+        public string correo { get; set; }
     }
 }

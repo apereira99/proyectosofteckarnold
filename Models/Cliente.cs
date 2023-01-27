@@ -9,6 +9,11 @@ namespace Proyecto_Arnold.Models
     {
         public int IdCliente { get; set; }
         public string NombreCliente { get; set; }
-        public string ProductoInteres { get; set; }
+        public string ProductodeInteres { get; set; }
+        public int edad { get; set; }
+        public string direccion { get; set; }
+        public string telefono { get; set; }
+        public string correo { get; set; }
+        public int documento_identidad { get; set; }
     }
 }
